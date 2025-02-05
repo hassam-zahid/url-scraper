@@ -54,7 +54,7 @@ export default {
             }"
             class="fixed z-10 top-0 left-0 w-80 bg-lightBgSecondary pr-2 h-screen flex-col transition-transform duration-300 ease-in-out"
         >
-            <History />
+            <History @link-selected="showHistory = false" />
         </div>
 
         <div :class="{'ml-80': windowWidth >= 768, 'ml-0': windowWidth < 768}" class="w-full overflow-y-auto">

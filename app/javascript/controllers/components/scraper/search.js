@@ -81,13 +81,13 @@ export default {
     </div>
 
     <div v-if="useScraperStoreObj().isTableVisible" class="max-w-4xl mx-auto mt-8">
-        <p class="text-base font-semibold mb-3">Results For: <span class="text-base font-normal">{{ useScraperStoreObj().linksData.endpoint }}</span><span title="Total Count" class="text-sm font-normal text-slate-500 ml-2">({{ useScraperStoreObj().linksData.count }})</span></p>
-        <div>
+        <p class="text-base font-semibold mb-3 p-2">Results For: <span class="text-base font-normal">{{ useScraperStoreObj().linksData.endpoint }}</span><span title="Total Count" class="text-sm font-normal text-slate-500 ml-2">({{ useScraperStoreObj().linksData.count }})</span></p>
+        <div class="w-full overflow-x-auto">
             <table class="min-w-full table-auto border-collapse">
                 <thead>
                     <tr class="bg-gray-100">
                         <th class="px-4 py-2 text-left text-sm font-semibold text-gray-700">Sr.</th>
-                        <th class="px-4 py-2 text-left text-sm font-semibold text-gray-700">Name</th>
+                        <th class="px-4 py-2 text-left text-sm font-semibold text-gray-700">Text</th>
                         <th class="px-4 py-2 text-left text-sm font-semibold text-gray-700">URL</th>
                     </tr>
                 </thead>
@@ -96,7 +96,7 @@ export default {
                         <td class="px-4 py-2 text-sm">{{ index + 1 }}</td>
                         <td class="px-4 py-2 text-sm">{{ sub_link.name }}</td>
                         <td class="px-4 py-2 text-sm">
-                            <a :href="sub_link.endpoint" target="_blank" class="hover:underline">{{ sub_link.endpoint }}</a>
+                            <a :href="sub_link.endpoint" target="_blank" class="text-blue-600 hover:underline">{{ sub_link.endpoint }}</a>
                         </td>
                     </tr>
                 </tbody>
@@ -106,7 +106,7 @@ export default {
 
     <div v-if="alertMessage" 
         :class="{'text-green-100 bg-green-700': alertType === 'success', 'text-red-100 bg-red-700': alertType === 'error'}" 
-        class="fixed bottom-3 left-1/2 -translate-x-1/2 py-2 px-10 max-w-lg mx-auto  z-10 rounded flex justify-between items-center transition-all duration-500 ease-in-out">
+        class="fixed bottom-3 left-1/2 -translate-x-1/2 py-2 px-10 w-[90%] md:w-fit md:max-w-lg mx-auto  z-10 rounded flex justify-between items-center transition-all duration-500 ease-in-out">
         <span>{{ alertMessage }}</span>
         <button @click="alertMessage = ''" class="text-lg font-bold ml-4">&times;</button>
     </div>

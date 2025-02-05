@@ -38,6 +38,7 @@ export default {
             this.useScraperStoreObj().linksData = this.useScraperStoreObj().historyData.find(item => item.id === id);
             this.useScraperStoreObj().isTableVisible =  true;
             this.useScraperStoreObj().search_url = this.useScraperStoreObj().linksData.endpoint;
+            this.$emit('link-selected');
         },
 
         async copyToClipboard(text) {
