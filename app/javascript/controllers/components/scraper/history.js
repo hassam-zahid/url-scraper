@@ -83,7 +83,7 @@ export default {
     </div>
     <div class="flex-1 overflow-auto p-3 space-y-3">
         <div v-for="(links, date) in groupedHistoryData" :key="date">
-            <div class="py-2 text-xs font-bold">{{ date }}</div>
+            <div class="pl-1 py-2 text-xs font-bold">{{ date }}</div>
             <div v-for="(link, index) in links" :key="index" class="py-1">
                 <div class="group flex justify-between items-center cursor-pointer hover:bg-lightBgHover p-1 rounded-md" @click="showSubLinks(link.id)">
                     <p class="text-sm truncate whitespace-nowrap overflow-hidden w-full" :title="link.name">
