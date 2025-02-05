@@ -50,6 +50,7 @@ export default {
     created() {
     },
     template: `
+    
     <div class="mt-20 px-4">
         <div class="max-w-lg mx-auto text-center">
             <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">Effortlessly Extract Links from Any Webpage</h1>
@@ -109,7 +110,5 @@ export default {
         <span>{{ alertMessage }}</span>
         <button @click="alertMessage = ''" class="text-lg font-bold ml-4">&times;</button>
     </div>
-
-
   `
 };

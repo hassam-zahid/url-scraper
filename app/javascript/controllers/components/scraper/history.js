@@ -77,7 +77,7 @@ export default {
     },
     template: `
     
-    <div class="p-4 sticky top-0 z-10">
+    <div class="p-4 sticky top-0 z-20">
         <p class="text-lg font-semibold">History</p>
         <p class="text-xs">Recent Web Scraping Results</p>
     </div>
@@ -100,7 +100,7 @@ export default {
             </div>
         </div>    
     </div>
-    <div class="p-4 sticky bottom-0 z-10">
+    <div class="p-4 sticky bottom-0 z-20">
     </div>
     `
 };
