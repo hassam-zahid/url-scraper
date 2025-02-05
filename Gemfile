@@ -63,6 +63,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'tailwindcss-rails', '~> 2.3'
+gem 'tailwindcss-rails', '~> 4.0'
 gem 'nokogiri', '~> 1.18', '>= 1.18.2'
 gem 'blueprinter', '~> 0.25.3'
