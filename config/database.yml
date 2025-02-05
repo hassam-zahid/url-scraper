@@ -86,6 +86,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
+    url: <%= ENV['DATABASE_URL'] %>
     database: url_scraper_production
     username: url_scraper
     password: <%= ENV["URL_SCRAPER_DATABASE_PASSWORD"] %>
