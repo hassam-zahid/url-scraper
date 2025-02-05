@@ -1,12 +1,12 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: url_scraper
+    databaseName: url_scraper_production
+    user: url_scraper
     plan: free
 
 services:
   - type: web
-    name: mysite
+    name: url_scraper
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
