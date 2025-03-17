@@ -64,5 +64,5 @@ group :test do
 end
 
 gem 'tailwindcss-rails', '~> 2.3'
-gem 'nokogiri', '~> 1.18', '>= 1.18.2'
+gem 'nokogiri', '~> 1.18'
 gem 'blueprinter', '~> 0.25.3'
