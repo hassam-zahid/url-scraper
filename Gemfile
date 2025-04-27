@@ -65,4 +65,4 @@ end
 
 gem 'tailwindcss-rails', '~> 2.3'
 gem 'nokogiri', '~> 1.18', '>= 1.18.2'
-gem 'blueprinter', '~> 0.25.3'
+gem 'blueprinter', '~> 1.1.2'
